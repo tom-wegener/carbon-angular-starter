@@ -18,18 +18,18 @@ import { StarterHomeComponent } from './starter-home/starter-home.component';
 import { StarterHomeRoutingModule } from './starter-home-routing.module';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		StarterHomeRoutingModule,
-		GridModule,
-		ListModule,
-		TabsModule,
-		TilesModule,
-		RadioModule,
-		ButtonModule,
-		IconModule
-	],
-	declarations: [StarterHomeComponent]
+    imports: [
+        CommonModule,
+        StarterHomeRoutingModule,
+        GridModule,
+        ListModule,
+        TabsModule,
+        TilesModule,
+        RadioModule,
+        ButtonModule,
+        IconModule,
+        StarterHomeComponent
+    ]
 })
 export class StarterHomeModule {
 	constructor(protected iconService: IconService) {

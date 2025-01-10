@@ -20,24 +20,22 @@ import { SupportComponent } from './pages/support/support.component';
 import { Link1Component } from './pages/link1/link1.component';
 
 @NgModule({
-	declarations: [
-		AppComponent,
-		HeaderComponent,
-		CatalogComponent,
-		DocsComponent,
-		SupportComponent,
-		Link1Component
-	],
-	imports: [
-		BrowserModule,
-		BrowserAnimationsModule,
-		FormsModule,
-		AppRoutingModule,
-		UIShellModule,
-		IconModule,
-		ThemeModule
-	],
-	bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        AppRoutingModule,
+        UIShellModule,
+        IconModule,
+        ThemeModule,
+        HeaderComponent,
+        CatalogComponent,
+        DocsComponent,
+        SupportComponent,
+        Link1Component
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 	constructor(protected iconService: IconService) {

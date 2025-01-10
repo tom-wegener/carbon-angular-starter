@@ -4,7 +4,8 @@
 		"analytics": false,
 		"schematicCollections": [
 			"@cypress/schematic",
-			"@schematics/angular"
+			"@schematics/angular",
+			"@angular-eslint/schematics"
 		]
 	},
 	"version": 1,
@@ -19,26 +20,19 @@
 					"builder": "@angular/build:application",
 					"options": {
 						"outputPath": {
-              "base": "dist"
-            },
-            "index": "src/index.html",
+							"base": "dist"
+						},
+						"index": "src/index.html",
 						"tsConfig": "./tsconfig.app.json",
-						"polyfills": [
-              "src/polyfills.ts"
-            ],
-						"assets": [
-							"src/favicon.ico",
-							"src/assets"
-						],
-						"styles": [
-							"src/styles.scss"
-						],
-            "scripts": [],
-            "extractLicenses": false,
+						"polyfills": ["src/polyfills.ts"],
+						"assets": ["src/favicon.ico", "src/assets"],
+						"styles": ["src/styles.scss"],
+						"scripts": [],
+						"extractLicenses": false,
 						"sourceMap": true,
 						"optimization": false,
-            "namedChunks": true,
-            "browser": "src/main.ts"
+						"namedChunks": true,
+						"browser": "src/main.ts"
 					},
 					"configurations": {
 						"production": {
@@ -46,7 +40,7 @@
 							"outputHashing": "all",
 							"sourceMap": false,
 							"namedChunks": false,
-              "extractLicenses": true,
+							"extractLicenses": true,
 							"fileReplacements": [
 								{
 									"replace": "src/environments/environment.ts",
@@ -65,19 +59,19 @@
 				},
 				"serve": {
 					"builder": "@angular/build:dev-server",
-          "options": {
-            "buildTarget": "carbon-angular-starter:build"
+					"options": {
+						"buildTarget": "carbon-angular-starter:build"
 					},
 					"configurations": {
-            "production": {
-              "buildTarget": "carbon-angular-starter:build:production"
+						"production": {
+							"buildTarget": "carbon-angular-starter:build:production"
 						}
 					}
 				},
 				"extract-i18n": {
 					"builder": "@angular/build:extract-i18n",
-          "options": {
-            "buildTarget": "carbon-angular-starter:build"
+					"options": {
+						"buildTarget": "carbon-angular-starter:build"
 					}
 				},
 				"e2e": {
@@ -91,6 +85,12 @@
 						"production": {
 							"devServerTarget": "carbon-angular-starter:serve:production"
 						}
+					}
+				},
+				"lint": {
+					"builder": "@angular-eslint/builder:lint",
+					"options": {
+						"lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
 					}
 				}
 			}
@@ -143,6 +143,12 @@
 		},
 		"@schematics/angular:directive": {
 			"prefix": "app"
+		},
+		"@angular-eslint/schematics:application": {
+			"setParserOptionsProject": true
+		},
+		"@angular-eslint/schematics:library": {
+			"setParserOptionsProject": true
 		}
 	}
 }

@@ -1,11 +1,13 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, OnInit, Renderer2, inject } from '@angular/core';
+import { GridModule, ListModule, RadioModule, TabsModule, ButtonModule, TilesModule } from 'carbon-components-angular';
+import { IconModule } from 'carbon-components-angular/icon';
 
 @Component({
     selector: 'app-starter-home',
     templateUrl: './starter-home.component.html',
     styleUrls: ['./starter-home.component.scss'],
-    standalone: false
+    imports: [GridModule, ListModule, RadioModule, TabsModule, ButtonModule, IconModule, TilesModule]
 })
 export class StarterHomeComponent implements OnInit {
 
