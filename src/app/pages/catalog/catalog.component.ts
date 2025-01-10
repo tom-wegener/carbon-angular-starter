@@ -3,14 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'app-catalog',
     templateUrl: './catalog.component.html',
-    styleUrls: ['./catalog.component.scss'],
-    standalone: false
+    styleUrls: ['./catalog.component.scss']
 })
-export class CatalogComponent implements OnInit {
+export class CatalogComponent {
 
 	constructor() { }
 
-	ngOnInit() {
-	}
+
 
 }
