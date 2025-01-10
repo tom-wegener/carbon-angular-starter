@@ -65,19 +65,19 @@
 				},
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
-					"options": {
-						"browserTarget": "carbon-angular-starter:build"
+          "options": {
+            "buildTarget": "carbon-angular-starter:build"
 					},
 					"configurations": {
-						"production": {
-							"browserTarget": "carbon-angular-starter:build:production"
+            "production": {
+              "buildTarget": "carbon-angular-starter:build:production"
 						}
 					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "carbon-angular-starter:build"
+          "options": {
+            "buildTarget": "carbon-angular-starter:build"
 					}
 				},
 				"e2e": {
