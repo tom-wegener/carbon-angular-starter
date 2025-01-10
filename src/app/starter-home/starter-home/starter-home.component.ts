@@ -2,9 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { Component, OnInit, Renderer2, inject } from '@angular/core';
 
 @Component({
-	selector: 'app-starter-home',
-	templateUrl: './starter-home.component.html',
-	styleUrls: ['./starter-home.component.scss']
+    selector: 'app-starter-home',
+    templateUrl: './starter-home.component.html',
+    styleUrls: ['./starter-home.component.scss'],
+    standalone: false
 })
 export class StarterHomeComponent implements OnInit {
 
