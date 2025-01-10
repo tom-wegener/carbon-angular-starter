@@ -6,6 +6,7 @@
 );
 
 @use "@carbon/styles";
+@use '@carbon/charts/scss/index.scss';
 
 .white {
 	@include styles.theme(styles.$white);
