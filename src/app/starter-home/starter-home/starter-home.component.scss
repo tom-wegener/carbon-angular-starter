@@ -1,13 +1,13 @@
-@import "@carbon/layout";
-@import "@carbon/type";
+@use "@carbon/layout";
+@use "@carbon/type";
 
 .starter-home {
 	.title {
-		@include type-style("productive-heading-05");
+		@include type.type-style("productive-heading-05");
 	}
 
 	.subtitle {
-		@include type-style("productive-heading-02");
+		@include type.type-style("productive-heading-02");
 		margin-bottom: 1rem;
 	}
 
@@ -40,7 +40,7 @@
 	}
 
 	.builder-heading {
-		@include type-style("productive-heading-04");
+		@include type.type-style("productive-heading-04");
 		margin-bottom: 1rem;
 	}
 
