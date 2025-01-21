@@ -4,18 +4,17 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { UIShellModule } from 'carbon-components-angular';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { provideRouter } from '@angular/router';
 
 describe('AppComponent', () => {
-	beforeEach(waitForAsync(() => {
+	beforeEach((() => {
 		TestBed.configureTestingModule({
-			declarations: [
-				AppComponent,
-				HeaderComponent
-			],
 			imports: [
-				RouterTestingModule,
+				AppComponent,
+				HeaderComponent,
 				UIShellModule
-			]
+			],
+			providers: [provideRouter([])]
 		}).compileComponents();
 	}));
 

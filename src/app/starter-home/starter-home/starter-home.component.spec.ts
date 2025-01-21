@@ -1,14 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
 import { StarterHomeComponent } from './starter-home.component';
-
-import {
-	GridModule,
-	ListModule,
-	RadioModule,
-	TabsModule,
-	TilesModule
-} from 'carbon-components-angular';
 
 describe('HomeComponent', () => {
 	let component: StarterHomeComponent;
@@ -17,13 +8,8 @@ describe('HomeComponent', () => {
 	beforeEach(waitForAsync(() => {
 		TestBed.configureTestingModule({
 			imports: [
-				GridModule,
-				ListModule,
-				TabsModule,
-				TilesModule,
-				RadioModule
-			],
-			declarations: [StarterHomeComponent]
+				StarterHomeComponent
+			]
 		})
 			.compileComponents();
 	}));
