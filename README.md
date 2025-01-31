@@ -29,7 +29,7 @@ Look at the [component library](https://angular.carbondesignsystem.com/) and [de
 
 ## Create new angular components
 
-Run `npx ng generate component component-name` to generate a new component. You can also use `npx ng generate directive/pipe/service/class/module`.
+Run `npx ng generate component <component-name>` to generate a new component. You can also use `npx ng generate <directive/pipe/service/class/module>`.
 
 ## Build
 
@@ -37,7 +37,7 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 
 ## Running unit tests
 
-Run `npm test` to execute the unit tests via [Jest](https://jestjs.io/).
+Run `npm test` to execute the unit tests via [Vitest](https://vitest.dev/).
 
 ## Running end-to-end tests
 
